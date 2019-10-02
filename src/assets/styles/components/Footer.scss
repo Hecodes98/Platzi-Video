@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  align-items: initial;
+  height: 100px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.footer a {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  padding-left: 30px;
+}
+
+@media only screen and (min-width: 600px) {
+  .footer {
+    flex-direction: row;
+    align-items: center;
+  }
+}

@@ -1,5 +1,12 @@
+@import "./Vars.scss";
+
 body {
   margin: 0;
-  background-color: red;
-  color: #fff;
+  background-color: $main-color;
+  font-family: $theme-font;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
 }

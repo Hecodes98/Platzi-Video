@@ -1,6 +1,8 @@
+/* eslint-disable comma-dangle */
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 module.exports = {
   entry: "./src/index.js",
   output: {
@@ -24,6 +26,17 @@ module.exports = {
         use: [
           {
             loader: "html-loader"
+          }
+        ]
+      },
+      {
+        test: /\.(png|gif|jpe?g)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "asstes/[hash].[ext]"
+            }
           }
         ]
       },

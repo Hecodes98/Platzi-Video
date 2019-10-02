@@ -1,0 +1,30 @@
+.carousel {
+  overflow: auto;
+  display: flex;
+  padding: 0px 30px;
+}
+
+.carousel::scrollbar {
+  display: none;
+}
+
+.carousel__container {
+  display: flex;
+  margin: 70px 0 45px 0;
+  padding: 10px 0;
+}
+
+.carousel::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+.carousel__container:hover .carousel-item {
+  opacity: 0.3;
+}
+
+.carousel__container:hover .carousel-item:hover {
+  transform: scale(1.4);
+  opacity: 1;
+}
