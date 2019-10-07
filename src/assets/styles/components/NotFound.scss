@@ -1,0 +1,35 @@
+.section404 {
+  height: calc(100vh - 180px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper__text--not-found h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 4em;
+  margin: 0;
+  animation: bounce 1.2s infinite;
+  height: 85px;
+}
+
+.wrapper__text--not-found p {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+@keyframes bounce {
+  0% {
+    font-size: 4em;
+    text-align: center;
+  }
+  50% {
+    font-size: 5em;
+    text-align: center;
+  }
+  100% {
+    font-size: 4em;
+    text-align: center;
+  }
+}
